@@ -1,0 +1,343 @@
+## PRAC- 1 WEB HOSTING a application on Azure Web Services ####
+
+Step 1: Create an App Service Plan in Azure
+Step 2: open App Services and press on create and select web app
+Step 3: In Web App 
+	select .NET 8(LTS)
+Step 4: Create a new file and then open it in VSCode
+	Run the cmd in terminal:- dotnet new mvc
+Step 5: Install `Azure App Service` &`Azure resources` extension in VScode.
+Step 6: deploy(in vscode) by clicking on App service(name of service) created 
+
+
+### PRAC-2 create storage acc blob,container & upload file ###
+Step 1: create storage account
+	Preferred storage type :- select azure blob
+Step 2: after create go in storage account and press upload 
+	upload anything and at bottom create new container
+	click upload
+Step 3: then in storage account go -> data storage -> container-> go inside and check the 
+	uploaded file
+ 
+
+### prac 3 create window VM & make communication btw them ##########
+Step 1: create virtual network
+	->go next(IP addresses)-> add a subnet->change name same to VN
+Step 2: create VM1
+	Image-> window
+	select pass-> and fill it
+	select-> RDP,https,http
+	in ntw section add the VN
+step 3: create VM2(same process)
+   step 4 & 5 (do in both VMs) ping each other
+Step 4: go in connect-> download rdp 
+step 5: open rdp->fill pass-> open firewall-> ibound enable  
+  
+-> if asked to send HEllo 
+in vm RDP go to edge and download-> nmap
+-> both vm add TCP 110 
+-> off firewall in both VM(RDP)
+-> cmd--> ncat -l -p 8080 -v 
+-> cmd --> ncat -v ip 8080
+
+
+### PRAC-4 create SQLDB server & setup DB instance add task(create table,add data,query) ####
+
+Step 1: azure sql sever and inside sql database
+	->set firewall click  IP save
+Step 2: copy string from db
+	login in ssms
+	
+
+
+### PRAC-5 detect & recoginse Face & attribute ###
+create Azure Ai service
+create Microsoft foundry
+create computer vision
+
+-> go to vision studio
+-> detect faces in img
+-> select recourcess
+-> acknogded 
+
+
+
+### prac-6 Demonstrate own cloud ###
+ 
+demo.owncloud
+
+### PRAC-7 using Ai service create BI analytics for transportation service ###
+
+-> create AnalysisServices
+->new model (add it)
+
+
+
+## PRAC-8 translate yt into any after language ####
+-> speech service
+-> Captioning with speech to text
+
+
+## PRAC-9 Azure service design translate text& document across language ####
+-> go to translator
+
+
+## PRAC 10 KVM  #### 
+-> go to chrome download ubuntu iso 
+-> go to vm open iso
+-> in VMware increase storage and ram 
+
+-> open cmd 
+
+-> sudo apt-get install virt-manager
+-> virt-manager
+-> sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils 	virt-manager
+-> sudo systemctl enable libvirtd
+-> sudo systemctl start libvirtd
+-> sudo usermod -aG libvirt $USER
+-> sudo usermod -aG kvm $USER
+
+-> restart ubuntu 
+-> IN ubuntu browser ubuntu iso download
+ Step:- open -> virt-manager
+	right click new
+	then click forward
+	select ubuntu file 
+step:- ubutnu will show in virt-manger  
+
+
+#### PRAC-11 XEN  #####
+xen center download
+xen server file download
+
+opne VMware 
+	go select server 
+	select on os system other 64 bit 
+	storge 50gb ram 4gb
+	check vm setup once again
+	RUN IT
+
+Step :- ok->ok->accept->ok->ok->sda 50 ok-> -> verify install
+	put password -> ok-> ok-> select time zone select ETC
+	->time zone universal -> download xen
+	
+
+Step :- install xen center
+ select first option then it will start
+go to network ->enter then check IP 
+ step:- go to center 
+ ->add sever which is display in VMware 
+ ->create 
+
+
+### PRAC 12 Anlaytics & tagging of context in img & vedio
+
+-> vision studio
+ 
+### PRAC 13 using azure service speech to text , text to speech#####
+
+->create foundry got to -> founfdry portal -> toogle 
+-> buuild-> models-> services
+
+
+### prac 15 using azure service do network service serverless architecrure  ###
+Step 1: create virtual network
+	->go next(IP addresses)-> add a subnet->change name same to VN
+Step 2: create VM1
+	Image-> ubuntu
+	in ntw section add the VN
+	select pass-> and fill it
+	
+Step 3: create another VM2
+	press connect via bastian 
+	 in pop cmd type->ping -c 4 10.0.0.4
+	go to vm1 and check ip and in vm2 type the above cmd
+	
+	
+### prac 16 serverless archi using azure ####
+
+->function app
+selct last option
+node.js
+
+-> azure portal -> hhtp trigger -> runn/test-> at bottom right tyepe
+{"name":"mahesh"}
+
+
+
+	
+		
+====================================================
+Great 👍 you’ve listed all important **Cloud Computing viva topics**. I’ll give you **simple, short, exam-ready answers (2–3 lines each)** so you can quickly revise.
+
+---
+
+### 1. Kubernetes
+
+An open-source platform used to **automate deployment, scaling, and management of containers**.
+
+### 2. DevOps
+
+A practice that combines **development and operations** to deliver software faster and more reliably.
+
+### 3. Docker
+
+A tool used to **create, run, and manage containers** for applications.
+
+### 4. Containers
+
+Lightweight packages that include **application + dependencies**, ensuring it runs anywhere.
+
+### 5. Data Governance
+
+Process of managing **data quality, security, and availability** in an organization.
+
+### 6. Data Migration
+
+Transferring data from **one system/storage to another**, often to cloud.
+
+### 7. Scalability & Types
+
+Ability to handle increased load.
+Types: **Vertical (increase power)**, **Horizontal (add machines)**.
+
+### 8. Resource Pooling
+
+Cloud provider shares resources among users using **multi-tenant model**.
+
+### 9. Rapid Elasticity
+
+Resources can be **quickly increased or decreased** based on demand.
+
+### 10. Multicloud & Community Cloud
+
+* Multicloud: Using **multiple cloud providers**
+* Community cloud: Shared by **organizations with common goals**
+
+### 11. Pros & Cons of Cloud Computing
+
+* Pros: Cost-effective, scalable, flexible
+* Cons: Security concerns, internet dependency
+
+### 12. Deterrent Control
+
+Prevents issues before they happen (e.g., **warnings, policies**).
+
+### 13. Corrective Control
+
+Fixes issues after they occur (e.g., **backup recovery**).
+
+### 14. CDN (Content Delivery Network)
+
+Distributes content via **multiple servers** to improve speed and performance.
+
+### 15. Fault
+
+An error or failure in system components that may cause issues.
+
+### 16. Load Balancing
+
+Distributes traffic across servers to **avoid overload and improve performance**.
+
+### 17. Microservices
+
+Architecture where application is divided into **small independent services**.
+
+### 18. NoSQL
+
+Non-relational database used for **flexible and large-scale data** (e.g., MongoDB).
+
+### 19. Replication
+
+Copying data across servers to ensure **availability and reliability**.
+
+### 20. CSP (Cloud Service Provider)
+
+Company providing cloud services (e.g., AWS, Azure).
+
+### 21. Private IP vs Public IP
+
+* Private IP: Used **inside network**
+* Public IP: Accessible **over internet**
+
+### 22. BaaS (Backend as a Service)
+
+Provides backend services like **database, authentication, APIs**.
+
+### 23. Cloud Founders
+
+Companies/people who developed cloud platforms (e.g., Amazon, Google).
+
+### 24. CMP (Cloud Management Platform)
+
+Tools used to **manage multiple cloud services** from one place.
+
+---
+
+### 25. Cloud Migration
+
+Process of moving applications/data **to cloud environment**.
+
+### 26. Cloud Washing
+
+False claim of a service being “cloud” when it’s not truly cloud-based.
+
+### 27. CRM Model
+
+Customer Relationship Management model used to **manage customer interactions**.
+
+### 28. Host Machine
+
+Physical computer that runs **virtual machines**.
+
+### 29. Multi-tenancy
+
+Multiple users share the same system **securely and efficiently**.
+
+### 30. Open Source / OpenStack
+
+* Open source: Free and modifiable software
+* OpenStack: Open-source cloud platform
+
+### 31. Vendor Lock-in
+
+Dependency on one cloud provider making it **hard to switch**.
+
+### 32. Virtual Cloud VM
+
+Virtual machine running in cloud acting like a **real computer**.
+
+### 33. Agility
+
+Ability to **quickly adapt and deploy changes** in cloud.
+
+### 34. Disaster Recovery
+
+System to **recover data/services after failure**.
+
+### 35. Blockchain
+
+Decentralized ledger used for **secure and transparent transactions**.
+
+### 36. Cloud Bursting
+
+Using **extra cloud resources during peak demand**.
+
+### 37. Cloud Native
+
+Applications built specifically for **cloud environments**.
+
+### 38. Edge & Grid Computing
+
+* Edge: Processing near data source
+* Grid: Combining multiple computers to solve problems
+
+### 39. Serverless Computing
+
+Run applications without managing servers; cloud handles everything.
+
+
+
+
+
+
